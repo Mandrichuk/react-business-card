@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+	font-family: Arial;
+}
+
+.react-logo {
+	width: 70px;
+	display: block;
+	object-fit: cover;
+}
