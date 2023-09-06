@@ -1,10 +1,62 @@
-* {
-  margin: 0;
+body {
 	font-family: Arial;
+	margin: 0;
+}
+
+
+li {
+	margin-right: 25px;
+}
+
+.header {
+	margin: 0;
+	box-shadow:1px 1px 5px rgba(0, 0, 0, .1)
+}
+
+.main {
+	margin-left: 10px;
+	flex-grow: 1;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: grey;
+	color: white;
+	padding-top: .7rem;
+	padding-bottom: .7rem;
+}
+
+.nav {
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .react-logo {
 	width: 70px;
-	display: block;
 	object-fit: cover;
+	margin-left: 10px;
+}
+
+.nav-items  {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+}
+
+.nav-items > li {
+	cursor: pointer;
+}
+
+.nav-items > li:hover {
+	color: rgb(128, 210, 237);
+}
+
+.footer-text {
+	margin-left: 10px;
 }

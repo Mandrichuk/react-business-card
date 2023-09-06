@@ -1,41 +1,54 @@
-// function GetPageHTML() {
-//   const page = (
-//     <div>
-//       <img className="react-logo" src="./images/react-logo.webp"/>
-//       <h1>Fun facts about React</h1>
-//       <ul>
-//         <li>Was first relesed in 2013</li>
-//         <li>Was originally created by Jordan Walke</li>
-//         <li>Has well over 100K stars on GitHub</li>
-//         <li>Is maintained by Facebook</li>
-//         <li>Powers thousands of enterprise apps, including mobile apps</li>
-//       </ul>
-//     </div>
-//   );
-
-//   return page;
-// }
-
-const divMain = document.getElementById('main');
-// ReactDOM.render(<GetPageHTML />, divMain);
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 
 
-function GetList() {
-  const list = (
-    <div>
-      <h1>Product Cart</h1>
 
+function CreateMain() {
+  const codeHTML  = (
+    <main className="main">
+      <h1>Fun facts about React</h1>
+      <ul>
+        <li>Was first relesed in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 100K stars on GitHub</li>
+        <li>Is maintained by Facebook</li>
+        <li>Powers thousands of enterprise apps, including mobile apps</li>
+      </ul>
+
+      <h3>Why I like React</h3> 
       <ol>
-        <li>Bananas</li>
-        <li>Milk</li>
-        <li>Nuts</li>
-        <li>Apples</li>
-        <li>Chocolate</li>
+        <li>It's a popular libary, so i'll be able to fit in with the cool kids!</li>
+        <li>I'm more likely to get a job as a developer if I know React</li>
       </ol>
-    </div>
+    </main>
   );
-  return list;
+
+  return codeHTML;
 }
 
-ReactDOM.render(<GetList />, divMain);
+
+function CreateFooter() {
+  const codeHTML = (
+    <footer className="footer">
+      <small class="footer-text">2023 Andrew development. All rights reserved.</small>
+    </footer>
+  );
+  return codeHTML;
+}
+
+
+function CreatePage() {
+  return (
+    <div>
+      <Header />
+      <CreateMain />
+      <CreateFooter />
+    </div>
+  );
+}
+
+
+
+const main = document.getElementById('main');
+ReactDOM.render(<CreatePage />, main);
