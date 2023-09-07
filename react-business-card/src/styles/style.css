@@ -1,0 +1,101 @@
+body {
+  background-color: #23252C;
+  color: white;
+
+  font-family: Arial;
+  margin-left: 100px;
+}
+
+.app-container {
+  width: 300px;
+  background-color: #1A1B21;
+  border-radius: 20px;
+}
+
+.header__user-avatar {
+  width: 100%;
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__user-name {
+  font-size: 1.7rem;
+  font-weight: bold;
+
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.header__user-position {
+  color: #F3BF99;
+  font-size: .9rem;
+  
+  margin-bottom: 10px;
+}
+
+.header__user-website {
+  font-size: .7rem;
+
+  margin-bottom: 15px;
+}
+
+.header__email-btn {
+  background-color: white;
+  width: 80%;
+  font-weight: bold;
+
+  padding: 8px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  margin-bottom: 35px;
+
+  transition: background-color 0.1s;
+}
+
+.header__email-btn:hover {
+  background-color: rgb(215, 215, 215);
+}
+
+main {
+  margin-left: 30px;
+}
+
+.main__user-about,
+.main__user-interests {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.main__user-about-text, 
+.main__user-about-text {
+  font-size: .7rem;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 5px; 
+}
+
+.main__user-about-text {
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: #161619;
+  padding: 10px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin-left: 12%;
+  margin-right: 12%;
+}
