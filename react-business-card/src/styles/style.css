@@ -1,9 +1,19 @@
 body {
   background-color: #23252C;
   color: white;
-
   font-family: Arial;
-  margin-left: 100px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 100px;
+}
+
+.theme-container {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 .app-container {
@@ -88,6 +98,8 @@ main {
 footer {
   background-color: #161619;
   padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .footer__nav {
@@ -98,4 +110,13 @@ footer {
   
   margin-left: 12%;
   margin-right: 12%;
+}
+
+.app-white-theme {
+  background-color: white;
+  color: black;
+}
+
+.footer-white-theme {
+  background-color: #D5D4D8;
 }
